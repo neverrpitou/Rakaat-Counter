@@ -1,0 +1,116 @@
+/* Mengatur body dengan flexbox untuk memusatkan konten */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Mengisi tinggi layar penuh */
+    margin: 0;
+    text-align: center;
+    flex-direction: column; /* Agar elemen tersusun ke bawah */
+    font-family: 'Poppins', sans-serif;
+
+    background-color: #FFF2F2;
+}
+
+
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 325px;
+    max-height: 370px;
+    width: 90%;
+}
+
+/* Penataan untuk elemen judul */
+h1 {
+    font-size: 36px;
+    font-weight: 700; /* Berat font yang lebih tebal */
+    color: #2D336B; /* Menambahkan warna maroon pada teks */
+    line-height: 35px;
+    margin-bottom: -27px;
+}
+
+h3 {
+    font-size: 27px;
+    color: #7886C7;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #C62300;
+}
+
+/* Penataan untuk elemen counter */
+#counter {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Penataan untuk tombol */
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Hover effect untuk tombol */
+button:hover {
+    background-color: #45a049;
+}
+
+/* MEDIA QUERIES UNTUK RESPONSIF */
+
+/* Untuk layar tablet dan ponsel */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px; /* Tidak ada perubahan ukuran */
+        margin-bottom: -27px;
+    }
+
+    h3 {
+        font-size: 27px;
+    }
+
+    #counter {
+        font-size: 36px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+}
+
+/* Untuk layar ponsel kecil */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 36px;
+        margin-bottom: -27px;
+    }
+
+    h3 {
+        font-size: 27px;
+    }
+
+    #counter {
+        font-size: 36px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+
+}
